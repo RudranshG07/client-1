@@ -1,0 +1,65 @@
+.fan {
+    border-radius: 50%;
+    border: 0px solid black;
+    background: #242424;
+    padding: 2.2rem;
+    position: absolute;
+    box-shadow: -10px 0 10px 0 dodgerblue, 0 -10px 10px 0 mediumseagreen, 10px 0 10px 0 yellow, 0 10px 10px 0 red;
+    animation: rotation 0.3s linear infinite, rgb 6s linear infinite;
+}
+.fim{
+    height: 300px;
+}
+.fan:hover {
+    border-radius: 50%;
+    border: 0px solid black;
+    background: #242424;
+    padding: 2.2rem;
+    position: relative;
+    box-shadow: -10px 0 10px 0 dodgerblue, 0 -10px 10px 0 mediumseagreen, 10px 0 10px 0 yellow, 0 10px 10px 0 red;
+    animation: rotation 1.5s linear infinite, rgb 8s linear infinite;
+}
+
+.fan:active:hover {
+    border-radius: 50%;
+    border: 9px solid black;
+    background: #242424;
+    padding: 4rem;
+    position: relative;
+    box-shadow: -10px 0 10px 0 dodgerblue, 0 -10px 10px 0 mediumseagreen, 10px 0 10px 0 yellow, 0 10px 10px 0 red;
+    animation: rotation 0.3s linear infinite, rgb 10s linear infinite;
+}
+@media(max-width:1199px){
+        
+    .fim{
+        height:200px;
+    }  
+}
+    @media(max-width:993px){
+        
+        .fim{
+            height:150px;
+        }  
+    }
+    @media(max-width:575px){
+        
+        .fim{
+            height:105px;
+        }  
+    }
+   
+    
+@keyframes rotation {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes rgb {
+    50% {
+        box-shadow: -10px 0 10px 0 mediumaquamarine, 0 -10px 10px 0 orangered, 10px 0 10px 0 royalblue, 0 10px 10px 0 lightslategrey;
+    }
+
+    100% {
+        box-shadow: -10px 0 10px 0 dodgerblue, 0 -10px 10px 0 mediumseagreen, 10px 0 10px 0 yellow, 0 10px 10px 0 red;
+    }
+}
+
